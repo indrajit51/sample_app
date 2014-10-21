@@ -5,27 +5,32 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
     <title><%= full_title(yield(:title)) %></title>
+   
     <link data-turbolinks-track="true" href="/assets/application.css?body=1" media="all" rel="stylesheet" />
-  <script data-turbolinks-track="true" src="/assets/jquery.js?body=1"></script>
-  <script data-turbolinks-track="true" src="/assets/jquery_ujs.js?body=1"></script>
-  <script data-turbolinks-track="true" src="/assets/turbolinks.js?body=1"></script>
-  <script data-turbolinks-track="true" src="/assets/home.js?body=1"></script>
-  <script data-turbolinks-track="true" src="/assets/bootstrap/affix.js?body=1"></script>
-  <script data-turbolinks-track="true" src="/assets/bootstrap/alert.js?body=1"></script>
-  <script data-turbolinks-track="true" src="/assets/bootstrap/button.js?body=1"></script>
-  <script data-turbolinks-track="true" src="/assets/bootstrap/carousel.js?body=1"></script>
-  <script data-turbolinks-track="true" src="/assets/bootstrap/collapse.js?body=1"></script>
-  <script data-turbolinks-track="true" src="/assets/bootstrap/dropdown.js?body=1"></script>
-  <script data-turbolinks-track="true" src="/assets/bootstrap/tab.js?body=1"></script>
-  <script data-turbolinks-track="true" src="/assets/bootstrap/transition.js?body=1"></script>
-  <script data-turbolinks-track="true" src="/assets/bootstrap/scrollspy.js?body=1"></script>
-  <script data-turbolinks-track="true" src="/assets/bootstrap/modal.js?body=1"></script>
-  <script data-turbolinks-track="true" src="/assets/bootstrap/tooltip.js?body=1"></script>
-  <script data-turbolinks-track="true" src="/assets/bootstrap/popover.js?body=1"></script>
-  <script data-turbolinks-track="true" src="/assets/bootstrap-sprockets.js?body=1"></script>
-  <script data-turbolinks-track="true" src="/assets/application.js?body=1"></script>
-  <meta content="authenticity_token" name="csrf-param" />
-  <meta content="sf9T4gRp2U1QldITtEof+xDI9Zdb4HBRw/4/K2EbHjQ=" name="csrf-token" />
+    <script data-turbolinks-track="true" src="/assets/jquery.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/jquery_ujs.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/turbolinks.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/home.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/bootstrap/affix.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/bootstrap/alert.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/bootstrap/button.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/bootstrap/carousel.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/bootstrap/collapse.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/bootstrap/dropdown.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/bootstrap/tab.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/bootstrap/transition.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/bootstrap/scrollspy.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/bootstrap/modal.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/bootstrap/tooltip.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/bootstrap/popover.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/bootstrap-sprockets.js?body=1"></script>
+    <script data-turbolinks-track="true" src="/assets/application.js?body=1"></script>
+    <meta content="authenticity_token" name="csrf-param" />
+    <meta content="sf9T4gRp2U1QldITtEof+xDI9Zdb4HBRw/4/K2EbHjQ=" name="csrf-token" />
+    <meta content="authenticity_token" name="csrf-param" />
+  
+
+    <meta content="sf9T4gRp2U1QldITtEof+xDI9Zdb4HBRw/4/K2EbHjQ=" name="csrf-token" />
     
     <%= csrf_meta_tags %>
     <%= render 'layouts/shim' %>
@@ -36,15 +41,16 @@
     <%= render 'layouts/header' %>
    
     <div class="container">
-    <% flash.each do |message_type, message| %>
-        <div class="alert alert-<%= message_type %>"><%= message %></div>
+      <% flash.each do |message_type, message| %>
+      <div class="alert alert-<%= message_type %>"><%= message %></div>
       <% end %>
       <%= yield %>
       <%= render 'layouts/footer' %>
       <%= debug(params) if Rails.env.development? %>
     </div>
-
     
-  <script src="js/jquery.js"></script>  
+    
+  
+  
   </body>
 </html>
