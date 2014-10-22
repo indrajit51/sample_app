@@ -6,6 +6,8 @@ class StaticPagesController < ApplicationController
   end
 
   def about
+  	@now = Time.now
+  	@yo = "Yo Ho! It works!"
   end
  
   def help
